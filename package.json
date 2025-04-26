@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:e2e": "mocha e2e-tests/*.cjs"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -25,6 +26,8 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "mocha": "^11.1.0",
+    "selenium-webdriver": "^4.30.0",
     "vite": "^6.2.0"
   }
 }

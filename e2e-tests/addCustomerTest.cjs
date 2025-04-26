@@ -20,7 +20,7 @@ describe('Add Customer Test', function () {
   });
 
   it('should add a new customer from the UI', async function () {
-    await driver.get('http://localhost:5179/customers'); // --> change this each run
+    await driver.get('http://localhost:5173/customers'); // --> change this each run
 
     const addCustomerButton = await driver.wait(until.elementLocated(By.id('add-customer')), 10000);
     await addCustomerButton.click();

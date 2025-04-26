@@ -2,7 +2,7 @@ const { Builder, By, until } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 const assert = require('assert');
 
-describe('VetCare UI End-to-End Test', function () {
+describe('Display correct title on the home page', function () {
   let driver;
   this.timeout(30000);
 
@@ -21,7 +21,7 @@ describe('VetCare UI End-to-End Test', function () {
 
   it('should display the correct title on the home page', async function () {
 
-    await driver.get('http://localhost:5179'); // --> change this each run
+    await driver.get('http://localhost:5173'); // --> change this each run
     const title = await driver.getTitle();
     const expectedTitle = 'VetCare'; 
     assert.strictEqual(title, expectedTitle, `Expected title to be "${expectedTitle}", but got "${title}"`);
